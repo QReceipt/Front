@@ -34,3 +34,10 @@ li{
   border-right : black solid 2px;
   text-align: center;
 }
+
+select{
+  padding:5px 25px 5px 25px;
+  font-family: 'Cafe24Ohsquare';
+  font-size : 15px;
+  border:none;
+}
