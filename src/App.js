@@ -1,6 +1,6 @@
 import './App.css';
 
-import Btn from "./components/Presentational/UI/atoms/Page.js"
+import Btn from "./components/Presentational/UI/atoms/Footer.js"
 
 function App() {
     return (<div>
