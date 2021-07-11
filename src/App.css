@@ -41,3 +41,15 @@ select{
   font-size : 15px;
   border:none;
 }
+
+.title, .page{
+  font-family: 'Cafe24Ohsquare';
+  font-size : 3rem;
+  margin:0;
+  padding:0;
+}
+
+.page{
+  width:150px;
+  transform:rotate(-90deg);
+}
