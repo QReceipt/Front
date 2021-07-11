@@ -1,25 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Btn from "./components/Presentational/UI/atoms/Li.js"
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (<div>
+        <Btn/>
+        <Btn/>
+        <Btn/>
+        <Btn/>
+        <Btn/>
+        </div>);
 }
 
 export default App;
