@@ -1,10 +1,10 @@
 import './App.css';
 
-import Btn from "./components/Presentational/UI/atoms/Footer.js"
+import Login from "./components/Presentational/UI/molecules/Logo.js"
 
 function App() {
     return (<div>
-        <Btn/>
+        <Login/>
         </div>);
 }
 

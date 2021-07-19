@@ -2,7 +2,8 @@ import React from "react";
 
 const Btn = ()=>{
     return (
-        <button>aaa</button>
+        <div>
+        <button>aaa</button></div>
     )
 }
 
