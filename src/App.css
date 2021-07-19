@@ -63,3 +63,7 @@ select{
 }
 
 /* https://alikerock.tistory.com/270 */
+
+#Receipt{
+  display:block;
+}
