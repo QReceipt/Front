@@ -1,6 +1,6 @@
 import './App.css';
 
-import Login from "./components/Presentational/UI/molecules/LoginInput.js"
+import Login from "./components/Presentational/UI/organisms/Login"
 
 function App() {
     return (<div>
