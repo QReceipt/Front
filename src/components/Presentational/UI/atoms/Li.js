@@ -1,8 +1,8 @@
 import React from "react";
 
-const Li = ()=>{
+const Li = ({content})=>{
     return (
-        <li>그러하다</li>
+        <li>{content}</li>
     )
 }
 
