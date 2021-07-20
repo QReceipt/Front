@@ -1,8 +1,8 @@
 import React from "react";
 
-const Btn = ()=>{
+const Btn = ({placeholder})=>{
     return (
-        <button>aaa</button>
+        <button>{placeholder}</button>
     )
 }
 
