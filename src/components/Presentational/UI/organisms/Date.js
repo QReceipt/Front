@@ -14,9 +14,10 @@ const Date = () => {
             }
         } else {
             let end = (type==="month")? 13: 32;
+            let tmp = (type==="month")? "월": "일";
             
             for (let i = 1; i < end; i++) {
-                lists.push(<option value={i + 1}>{i}일</option>);
+                lists.push(<option value={i + 1}>{i}{tmp}</option>);
             }
         }
 
