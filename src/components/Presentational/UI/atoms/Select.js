@@ -1,8 +1,9 @@
 import React from "react";
 
-const Select = ()=>{
+const Select = ({option})=>{
     return (
         <select>
+            {option}
         </select>
     )
 }
