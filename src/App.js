@@ -1,6 +1,6 @@
 import './App.css';
 
-import Login from "./components/Presentational/UI/molecules/Nav"
+import Login from "./components/Presentational/UI/organisms/Receipt"
 
 function App() {
     return (<div>
