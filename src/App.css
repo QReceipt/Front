@@ -70,4 +70,31 @@ select{
 
 #receiptFrame{
   border :rgb(100, 100, 100) solid 1px;
+  font-size:1.2rem;
+}
+
+#receipttitle
+{
+  padding : 20px;
+}
+
+#receipt-table
+{
+  width:100%;
+  padding:10px;
+  font-family: 'Cafe24Ohsquare';
+  font-size : 1.5rem;
+  text-align: center;
+}
+
+tr, th, td{
+  padding:2%;
+}
+
+#receipt-total, th {
+  background-color : rgb(238, 238, 238);
+}
+
+#mapbutton {
+  left:100%
 }
