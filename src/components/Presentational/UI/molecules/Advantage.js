@@ -3,7 +3,7 @@ import Input from "../atoms/Input.js"
 import React from "react";
 import styled from 'styled-componeents';
 
-const Login = ()=>{
+const Advantage = ()=>{
     return (
         <div>
             <Input></Input>
@@ -13,4 +13,4 @@ const Login = ()=>{
     )
 }
 
-export default Login;
+export default Advantage;

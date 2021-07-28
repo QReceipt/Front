@@ -29,7 +29,6 @@ const Receipt = ({
             <Shopinfo enrollnum={order} callnum={call}></Shopinfo>
             <ReceiptTable></ReceiptTable>
             <Payinfo paydate={paydate} paysuccess={paysuccess}></Payinfo>
-
         </div>
         
     )
