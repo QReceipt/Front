@@ -4,7 +4,7 @@ import React from "react";
 
 const LoginInput = ({title}) => {
     return (
-        <div>
+        <div className="LoginInput">
                 <Content content={title}/>
                 <Input/>
         </div>

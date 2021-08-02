@@ -1,6 +1,6 @@
 import './App.css';
 
-import Login from "./components/Presentational/pages/SeeAll"
+import Login from "./components/Presentational/pages/Login"
 
 function App() {
     return (<div>

@@ -72,8 +72,6 @@ select{
   background-color: black;
 }
 
-/* https://alikerock.tistory.com/270 */
-
 #Receipt{
   display:block;
 }
@@ -115,10 +113,46 @@ tr, th, td{
 }
 
 #container{
+  flex:1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
   padding:50px 10px 0 10px;
   margin : 10px 0 50px 0;
   height: 100%;
+}
+
+.LoginInput{
+  width:400px;
+  text-align: right;
+  margin:20px;
+}
+
+.LoginInput>*{
+  padding: 10px;
+  display: inline;
+}
+
+.Btn>*{
+  margin:10px;
+}
+
+#Login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex:1;
+  margin: 0 0 20px 0;
+}
+
+#Login > *{
+  margin : 20px 0 0 0;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0; 
 }

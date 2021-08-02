@@ -9,7 +9,7 @@ import Detail from "../UI/organisms/Detail"
 
 const SeeAll = () => {
     return (
-        <div>
+        <div className="wrapper">
             <Nav/>
             <div id="container">
                 <div className="item">
