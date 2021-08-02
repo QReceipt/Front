@@ -1,6 +1,6 @@
 import './App.css';
 
-import Login from "./components/Presentational/UI/organisms/Receipt"
+import Login from "./components/Presentational/pages/SeeAll"
 
 function App() {
     return (<div>

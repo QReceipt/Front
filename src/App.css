@@ -98,3 +98,8 @@ tr, th, td{
 #mapbutton {
   left:100%
 }
+
+#Menu{
+  position:absolute;
+  right:0;
+}

@@ -5,7 +5,7 @@ import Li from "../atoms/Li"
 const Nav = () => {
 
     return (
-        <div>
+        <div id="Menu">
             <Li content="QReceipt 가맹점"/>
             <Li content="영수증 상세보기"/>
             <Li content="로그인"/>
