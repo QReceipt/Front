@@ -6,6 +6,7 @@ import Nav from "../UI/molecules/Nav"
 import Page from "../UI/atoms/Page"
 import Footer from "../UI/atoms/Footer"
 import Detail from "../UI/organisms/Detail"
+import SubTitle from "../UI/atoms/SubTitle";
 
 const SeeAll = () => {
     return (
@@ -13,6 +14,7 @@ const SeeAll = () => {
             <Nav/>
             <div id="container">
                 <div className="item">
+                    <SubTitle title="날짜 모아보기"/>
                     <Date/>
                     <Page
                     num = "001"/>
