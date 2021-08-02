@@ -19,16 +19,16 @@ const Receipt = ({
     return (
         <div id="receiptFrame">
             <Top />
-            <Receiptdate num={ordernum} date={orderdate}></Receiptdate>
+            <Receiptdate num={ordernum} date={orderdate} />
             <div id = "receipttitle">
                 <Title
                     title="가게 이름"
                     />
                     <Btn id = "mapbutton" placeholder="위치"/>
             </div>
-            <Shopinfo enrollnum={order} callnum={call}></Shopinfo>
-            <ReceiptTable></ReceiptTable>
-            <Payinfo paydate={paydate} paysuccess={paysuccess}></Payinfo>
+            <Shopinfo enrollnum={order} callnum={call} />
+            <ReceiptTable />
+            <Payinfo paydate={paydate} paysuccess={paysuccess} />
 
         </div>
         
