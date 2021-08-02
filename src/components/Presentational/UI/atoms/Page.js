@@ -1,8 +1,8 @@
 import React from "react";
 
-const Page = ()=>{
+const Page = ({num})=>{
     return (
-        <h1 className="page">aaa
+        <h1 className="page">{num}
         </h1>
     )
 }

@@ -59,6 +59,9 @@ select{
 .page{
   width:150px;
   transform:rotate(-90deg);
+  position:relative;
+  top:31rem;
+  left:-2rem;
 }
 
 #footer{
@@ -109,4 +112,13 @@ tr, th, td{
 #Menu{
   position:absolute;
   right:0;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  padding:50px 10px 0 10px;
+  margin : 10px 0 50px 0;
+  height: 100%;
 }
