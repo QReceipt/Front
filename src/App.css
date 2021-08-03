@@ -156,3 +156,7 @@ tr, th, td{
   flex-direction: column;
   margin: 20px 0 0 0; 
 }
+
+.subTit{
+  margin : 0 0 0 20px;
+}
