@@ -26,7 +26,7 @@ button {
     font-size: 1rem;
 }
 
-Input {
+Input, #typeSelect {
     padding: 10px 20px;
     border-radius: 30px;
     border: rgb(100, 100, 100) 1px solid;
@@ -145,7 +145,7 @@ th {
     margin: 10px;
 }
 
-#Login {
+.Login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +155,7 @@ th {
     margin: 10% 0 10% 0;
 }
 
-#Login > * {
+.Login > * {
     margin: 20px 0 0;
 }
 
@@ -182,4 +182,12 @@ th {
   padding: 50px 10px 0;
   margin: 10px 0 50px;
   height: 100%;
+}
+
+#typeSelect{
+  margin: 30px 10px 0 0;
+}
+
+#RegForm{
+  text-align: center;
 }

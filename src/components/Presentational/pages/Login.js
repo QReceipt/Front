@@ -8,12 +8,10 @@ import Footer from "../UI/atoms/Footer"
 const Login = () => {
     return (
         <div className="wrapper">
-            <div id="Login">
+            <div className="Login">
                 <Title title="로그인 하기"/>
                 <Input/>
-                <div >
-                    <LogIf/>
-                </div>
+                <LogIf/>
             </div>
             <Footer/>
         </div>

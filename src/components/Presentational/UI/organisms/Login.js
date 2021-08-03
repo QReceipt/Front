@@ -6,8 +6,8 @@ import Btn from "../atoms/Btn"
 const Login = () => {
     return (
         <div>
-            <Input title="ID"/>
-            <Input title="PASSWORD"/>
+            <Input title="아이디"/>
+            <Input title="비밀번호"/>
             <div className="Btn">
                 <Btn placeholder="KAKAO"/>
                 <Btn placeholder="GOOGLE"/>
