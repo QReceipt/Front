@@ -6,7 +6,7 @@ import Nav from "../UI/molecules/Nav"
 import Page from "../UI/atoms/Page"
 import Footer from "../UI/atoms/Footer"
 import Detail from "../UI/organisms/Detail"
-import SubTitle from "../UI/atoms/SubTitle";
+import SubTitle from "../UI/atoms/SubTitle"
 import SelTit from "../UI/atoms/SimContent"
 
 const SeeAll = () => {
@@ -16,8 +16,8 @@ const SeeAll = () => {
             <div id="container">
                 <div className="item">
                     <div className="subTit">
-                        <SubTitle title="영수증 모아보기"/>
-                        <SelTit content="날짜 선택" />
+                        <SubTitle title="영수증 모아보기" map="false"/>
+                        <SelTit content="날짜 선택"/>
                     </div>
                     <Date/>
                     <Page num="001"/>

@@ -9,29 +9,32 @@ import ReceiptTable from "../molecules/ReceiptTable";
 import Payinfo from "../molecules/Payinfo";
 
 const Receipt = ({
-    orderdate, 
+    orderdate,
     ordernum,
     order,
     call,
     paydate,
-    paysuccess
+    paysuccess,
+    map
 }) => {
     return (
         <div id="receiptFrame">
-            <Top />
-            <Receiptdate num={ordernum} date={orderdate} />
-            <div id = "receipttitle">
-                <Title
-                    title="가게 이름"
-                    />
-                    <Btn id = "mapbutton" placeholder="위치"/>
-            </div>
-            <Shopinfo enrollnum={order} callnum={call} />
-            <ReceiptTable />
-            <Payinfo paydate={paydate} paysuccess={paysuccess} />
+            <Top/>
+            <Receiptdate num={ordernum} date={orderdate}/>
+            <div id="receipttitle">
+                <Title title="가게 이름"/> 
+                {
+                    (map === "false")
+                        ? <Btn id="mapbutton" placeholder="위치"/>
+                        : null
+                }
 
+            </div>
+            <Shopinfo enrollnum={order} callnum={call}/>
+            <ReceiptTable/>
+            <Payinfo paydate={paydate} paysuccess={paysuccess}/>
         </div>
-        
+
     )
 }
 
