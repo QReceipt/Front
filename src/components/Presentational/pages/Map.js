@@ -3,7 +3,6 @@ import React from "react";
 import Receipt from "../UI/organisms/Receipt"
 import Nav from "../UI/molecules/Nav"
 import Footer from "../UI/atoms/Footer"
-import Detail from "../UI/organisms/Detail"
 import SubTitle from "../UI/atoms/SubTitle"
 
 const SeeAll = () => {

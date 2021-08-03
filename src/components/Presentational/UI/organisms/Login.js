@@ -11,7 +11,7 @@ const Login = () => {
             <div className="Btn">
                 <Btn placeholder="KAKAO"/>
                 <Btn placeholder="GOOGLE"/>
-                <Btn placeholder="Login"/>
+                <Btn placeholder="로그인"/>
             </div>
         </div>
     )
