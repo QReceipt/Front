@@ -72,14 +72,16 @@ select {
 .page,
 .title {
     font-family: 'Cafe24Ohsquare';
-    font-size: 3rem;
     margin: 0;
     padding: 0;
 }
 
+.title{
+  font-size: 2rem;
+}
+
 .Subtitle {
-    font-family: 'Cafe24Ohsquare';
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin: 0;
     padding: 0;
 }
@@ -89,7 +91,9 @@ select {
     transform: rotate(-90deg);
     position: relative;
     top: 60%;
+    font-size: 3rem;
     left: -2rem;
+    margin: -120px 0 0 0;
 }
 
 #footer {
@@ -105,7 +109,8 @@ select {
 }
 
 #receiptFrame {
-    border: rgb(100, 100, 100) solid 1px;
+    border: rgb(190, 190, 190) solid 1px;
+    box-shadow: 5px 5px 2px 1px rgb(238, 238, 238);
     font-size: 1.2rem;
     padding: 20px;
     height:100%;
@@ -124,7 +129,7 @@ select {
 
 #all-table{
   margin : 20px  0 0 20px;
-  width:80%;
+  width:90%;
 }
 
 td,
@@ -139,7 +144,7 @@ th {
 }
 
 #mapbutton {
-    width:30px;
+    width:25px;
 }
 
 #Menu {
@@ -190,9 +195,13 @@ th {
     margin: 0 0 0 20px;
 }
 
+.fstCont>*{
+  margin:10px;
+}
 
 #MapContainer {
   grid-template-columns: 1fr 2fr;
+  margin:0 0 0 0;
 }
 
 
@@ -200,7 +209,7 @@ th {
   flex: 1;
   display: grid;
   column-gap: 20px;
-  padding: 50px 10px 0;
+  padding: 60px 10px 0;
   margin: 10px 0 50px;
   height: 100%;
 }
@@ -219,4 +228,28 @@ th {
 
 .item{
   margin :  0 0 20px 0 ;
+}
+
+#leftArr, #rightArr{
+  width:7%;
+  margin:20px;
+}
+
+#rightArr{
+  transform: rotate(-180deg);
+}
+
+#conPage{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#conPage>*{
+  margin:10px 10px 0 10px;
+}
+
+.selPage{
+  width:70px;
 }

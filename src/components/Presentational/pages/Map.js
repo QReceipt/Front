@@ -3,21 +3,24 @@ import React from "react";
 import Receipt from "../UI/organisms/Receipt"
 import Nav from "../UI/molecules/Nav"
 import Footer from "../UI/atoms/Footer"
-import SubTitle from "../UI/atoms/SubTitle"
+import Title from "../UI/atoms/Title"
 
 const SeeAll = () => {
     return (
         <div className="wrapper">
-            <Nav/>
-            <div id="MapContainer">
-                <div className="item fstCont">
-                    <SubTitle title="위치 보기"/>
-                    <Receipt
-                    map="true"
-                    />
+            <div className="container-fluid">
+                <Nav/>
+                <div id="MapContainer">
+                    <div className="item">
+                        <div className="fstCont">
+                            <Title title="위치 보기"/>
+                            <Receipt map="true"/>
+                        </div>
+                    </div>
+                    <div className="item"></div>
                 </div>
-                <div className="item"></div>
             </div>
+
             <Footer/>
         </div>
     )
