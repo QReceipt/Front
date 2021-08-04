@@ -101,7 +101,6 @@ select {
 
 #receipttitle > * {
     display: inline;
-    margin: 0 20px 0 0;
 }
 
 #receipt-table {
@@ -123,7 +122,7 @@ th {
 }
 
 #mapbutton {
-    left: 100%;
+    width:30px;
 }
 
 #Menu {
@@ -170,7 +169,7 @@ th {
     margin: 20px 0 0;
 }
 
-.subTit {
+.fstCont {
     margin: 0 0 0 20px;
 }
 
@@ -195,4 +194,8 @@ th {
 
 #RegForm{
   text-align: center;
+}
+
+.fstCont{
+  margin: 0  0 0 20px;
 }

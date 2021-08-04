@@ -10,7 +10,7 @@ const SeeAll = () => {
         <div className="wrapper">
             <Nav/>
             <div id="MapContainer">
-                <div className="item">
+                <div className="item fstCont">
                     <SubTitle title="위치 보기"/>
                     <Receipt
                     map="true"

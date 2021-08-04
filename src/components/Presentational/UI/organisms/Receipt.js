@@ -8,6 +8,9 @@ import Shopinfo from "../molecules/Shopinfo"
 import ReceiptTable from "../molecules/ReceiptTable";
 import Payinfo from "../molecules/Payinfo";
 
+import Map from "../../asset/map.png"
+import {Link} from "react-router-dom";
+
 const Receipt = ({
     orderdate,
     ordernum,
@@ -22,10 +25,11 @@ const Receipt = ({
             <Top/>
             <Receiptdate num={ordernum} date={orderdate}/>
             <div id="receipttitle">
-                <Title title="가게 이름"/> 
-                {
+                <Title title="가게 이름"/> {
                     (map === "false")
-                        ? <Btn id="mapbutton" placeholder="위치"/>
+                        ? <Link to="/map">
+                            <img src={Map} id="mapbutton" placeholder="위치"/>
+                          </Link>
                         : null
                 }
 

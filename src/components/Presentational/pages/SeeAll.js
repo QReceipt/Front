@@ -15,14 +15,14 @@ const SeeAll = () => {
             <Nav/>
             <div id="container">
                 <div className="item">
-                    <div className="subTit">
-                        <SubTitle title="영수증 모아보기" map="false"/>
+                    <div className="fstCont">
+                        <SubTitle title="영수증 모아보기"/>
                         <SelTit content="날짜 선택"/>
                     </div>
                     <Date/>
                     <Page num="001"/>
                 </div>
-                <div className="item"><Receipt/></div>
+                <div className="item"><Receipt map="false"/></div>
                 <div className="item"><Detail/></div>
             </div>
             <Footer/>
