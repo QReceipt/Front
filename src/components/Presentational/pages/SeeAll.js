@@ -8,6 +8,7 @@ import Footer from "../UI/atoms/Footer"
 import Detail from "../UI/organisms/Detail"
 import SubTitle from "../UI/atoms/SubTitle"
 import SelTit from "../UI/atoms/SimContent"
+import Table from "../UI/molecules/AllTable"
 
 const SeeAll = () => {
     return (
@@ -21,6 +22,7 @@ const SeeAll = () => {
                             <SelTit content="날짜 선택"/>
                         </div>
                         <Date/>
+                        <Table/>
                         <Page num="001"/>
                     </div>
                     <div className="item"><Receipt map="false"/></div>
