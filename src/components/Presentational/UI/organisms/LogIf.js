@@ -1,8 +1,9 @@
 import React from "react";
 
-import Input from "../molecules/LoginInput"
 import Btn from "../atoms/Btn"
 import SimCont from "../atoms/SimContent"
+
+import {Link} from 'react-router-dom'
 
 const Login = () => {
     return (
@@ -13,7 +14,7 @@ const Login = () => {
                 <div className="Btn">
                 <Btn placeholder="KAKAO"/>
                 <Btn placeholder="GOOGLE"/>
-                <Btn placeholder="회원가입"/>
+                <Link to="/register"><Btn placeholder="회원가입"/></Link>
                 </div>
             </div>
     )
