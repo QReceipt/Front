@@ -26,8 +26,10 @@ const SeeAll = () => {
                         </div>
                         <Page num="001"/>
                     </div>
-                    <div className="item"><Receipt map="false"/>
-                        <Controll/></div>
+                    <div className="item">
+                        <Receipt map="false"/>
+                        <Controll/>
+                        </div>
                     <div className="item">
                         <Detail/>
                     </div>
