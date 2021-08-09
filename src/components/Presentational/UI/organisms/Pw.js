@@ -9,7 +9,7 @@ const Pw = () => {
         let lists = [];
 
         for (let i = 0; i < 2; i++) {
-            lists.push(<option value={i + 1}>{tmp[i]}</option>);
+            lists.push(<option value={i + 1} key={i+1}>{tmp[i]}</option>);
         }
 
         return lists;
@@ -17,7 +17,7 @@ const Pw = () => {
 
     return (
         <div id="RegForm">
-            <Input title="아이디"/>
+            <Input title="이메일" placeHolder="ex)qreceipt@naver.com"/>
             <Input title="비밀번호"/>
             <Input title="비밀번호 확인"/>
             <Select title="유형 선택" list={type()}/>

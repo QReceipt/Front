@@ -1,9 +1,9 @@
 import React from "react";
 
-const Input = ()=>{
+const Input = ({placeHolder})=>{
     return (
         <div>
-        <input placeholder="aa"/>
+        <input placeholder={placeHolder}/>
         </div>
     )
 }

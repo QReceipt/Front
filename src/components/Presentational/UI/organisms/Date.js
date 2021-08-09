@@ -9,7 +9,7 @@ const Date = () => {
         if (type === "year") {
             let i = 2001;
             while (i < 2022 && i > 2000) {
-                lists.push(<option value={i + 1}>{i}년</option>);
+                lists.push(<option value={i + 1}  key={i+1}>{i}년</option>);
                 i += 1;
             }
         } else {
@@ -17,7 +17,7 @@ const Date = () => {
             let tmp = (type==="month")? "월": "일";
             
             for (let i = 1; i < end; i++) {
-                lists.push(<option value={i + 1}>{i}{tmp}</option>);
+                lists.push(<option value={i + 1}  key={i+1}>{i}{tmp}</option>);
             }
         }
 

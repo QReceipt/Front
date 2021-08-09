@@ -1,0 +1,37 @@
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .page{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container-fluid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin:0;
+        padding:0;
+    }
+
+    .page{
+        display: none;
+    }
+    
+    .Login{
+        width:90%;
+    }
+
+    .LoginInput{
+        text-align: left;
+    }
+
+    .LoginInput>div>input{
+        width:80%;
+    }
+
+    #typeSelect{
+        margin:30px 0 0 0;
+    }
+    
+}

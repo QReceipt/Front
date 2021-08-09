@@ -43,7 +43,6 @@ Input, #typeSelect, .selPage {
     border: rgb(100, 100, 100) 1px solid;
     font-size: 1rem;
 }
-
 li {
     font-family: 'Cafe24Ohsquare';
     font-size: 20px;
@@ -159,8 +158,8 @@ th {
 
 .LoginInput {
     width: auto;
-    text-align: right;
     margin: 20px;
+    text-align: right;
 }
 
 .LoginInput > * {
@@ -176,7 +175,6 @@ th {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     flex-direction: column;
     flex: 1;
     margin: 5% 0 5% 0;
