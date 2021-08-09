@@ -18,7 +18,7 @@ const SeeAll = () => {
                 <div id="container">
                     <div className="item">
                         <div className="fstCont">
-                            <Title title="영수증 모아보기" />
+                            <Title title="영수증 모아보기"/>
                         </div>
                         <Date/>
                         <div id="all-table">
@@ -26,10 +26,10 @@ const SeeAll = () => {
                         </div>
                         <Page num="001"/>
                     </div>
-                    <div className="item"><Receipt map="false"/></div>
+                    <div className="item"><Receipt map="false"/>
+                        <Controll/></div>
                     <div className="item">
                         <Detail/>
-                        <Controll />
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Li = ({content})=>{
     return (
-        <li>{content}</li>
+        <li className="navItem">{content}</li>
     )
 }
 

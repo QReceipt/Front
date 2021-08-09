@@ -1,4 +1,5 @@
 import './App.css';
+import './AppMedia.css';
 
 import Reg from "./components/Presentational/pages/Register"
 import Login from "./components/Presentational/pages/Login"
