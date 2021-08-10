@@ -1,5 +1,5 @@
 @media screen and (min-width:1024px) {
-    #menubar{
+    #menubar {
         display: none;
     }
 }
@@ -9,19 +9,18 @@
         display: none;
     }
 
-
     #all-table {
         margin: 0;
         width: 100%;
     }
 
-    .item>div>select{
-        width:33%;
-        padding:5px;
+    .item > div > select {
+        width: 33%;
+        padding: 5px;
     }
 
-    .fstCont{
-        margin:0;
+    .fstCont {
+        margin: 0;
     }
 }
 
@@ -55,7 +54,8 @@
         margin: 30px 0 0;
     }
 
-    #container,#MapContainer {
+    #MapContainer,
+    #container {
         display: flex;
         flex-direction: column;
         padding: 60px 10px 0;
@@ -67,29 +67,30 @@
         width: 100%;
     }
 
-    .item>div>select{
-        width:33%;
-        padding:5px;
+    .item > div > select {
+        width: 33%;
+        padding: 5px;
     }
 
-    .fstCont{
-        margin:0;
+    .fstCont {
+        margin: 0;
     }
 
     #MapContainer {
-        width:100%;
-    }
-    
-    #Menu{
-        position:fixed;
-        top:0;
+        width: 100%;
     }
 
-    #menubar>img, #hamBar{
-        width:30px;
+    #Menu {
+        position: fixed;
+        top: 0;
+    }
+
+    #hamBar,
+    #menubar > img {
+        width: 30px;
         right: 0;
-        margin:20px;
-        position:absolute;
+        margin: 20px;
+        position: absolute;
     }
 
     li {
@@ -101,14 +102,22 @@
         width: auto;
         margin: 0;
         padding: 10px 20px 0;
-        border:none;
+        border: none;
         text-align: left;
     }
 
-    #liNav{
+    #liNav {
         margin: 35% 5% 0 0;
         background-color: green;
-        padding: 20px 15px 20px 15px;
+        padding: 20px 15px;
         border-radius: 30px;
+    }
+
+    #shortNav {
+        display: block;
+    }
+
+    #longNav {
+        display: none;
     }
 }

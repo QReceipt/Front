@@ -16,12 +16,22 @@ const Nav = () => {
         <div onClick={toggle}>
 
             <div id="Menu">
-                <div id="menubar">
-                        {
-                            state
-                                ? <HamBar/>
-                                : <HamBarC/>
-                        }
+                <div id="shortNav">
+                    {
+                        state
+                            ? <HamBar/>
+                            : <HamBarC/>
+                    }
+                </div>
+                <div id="longNav">
+
+                    <Li content="QReceipt 가맹점"/>
+                    <Link to="/register">
+                        <Li content="회원가입"/>
+                    </Link>
+                    <Link to="/login">
+                        <Li content="로그인"/>
+                    </Link>
                 </div>
             </div>
         </div>
