@@ -1,7 +1,7 @@
 import React from "react";
 
 import Receipt from "../UI/organisms/Receipt"
-import Nav from "../UI/molecules/Nav"
+import Nav from "../UI/organisms/Nav"
 import Footer from "../UI/atoms/Footer"
 import Title from "../UI/atoms/Title"
 

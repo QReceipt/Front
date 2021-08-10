@@ -2,7 +2,7 @@ import React from "react";
 
 import Date from "../UI/organisms/Date"
 import Receipt from "../UI/organisms/Receipt"
-import Nav from "../UI/molecules/Nav"
+import Nav from "../UI/organisms/Nav"
 import Page from "../UI/atoms/Page"
 import Footer from "../UI/atoms/Footer"
 import Detail from "../UI/organisms/Detail"

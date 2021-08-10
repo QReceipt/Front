@@ -43,6 +43,7 @@ Input, #typeSelect, .selPage {
     border: rgb(100, 100, 100) 1px solid;
     font-size: 1rem;
 }
+
 li {
     font-family: 'Cafe24Ohsquare';
     font-size: 20px;
@@ -184,11 +185,6 @@ th {
     margin: 20px 0 20px 0;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
 .fstCont {
     margin: 0 0 0 20px;
 }
@@ -250,4 +246,8 @@ th {
 
 .selPage{
   width:70px;
+}
+
+#shortNav{
+  display: none;
 }
