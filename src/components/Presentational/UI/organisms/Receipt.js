@@ -5,7 +5,7 @@ import Title from "../atoms/Title"
 import Btn from "../atoms/Btn"
 import Receiptdate from "../molecules/Receiptdate"
 import Shopinfo from "../molecules/Shopinfo"
-import ReceiptTable from "../molecules/ReceiptTable";
+import ReceiptTable from "./ReceiptTable";
 import Payinfo from "../molecules/Payinfo";
 
 import Map from "../../asset/map.png"

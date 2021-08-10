@@ -6,7 +6,7 @@ import Nav from "../UI/organisms/Nav"
 import Page from "../UI/atoms/Page"
 import Footer from "../UI/atoms/Footer"
 import Detail from "../UI/organisms/Detail"
-import Table from "../UI/molecules/ReceiptTable"
+import Table from "../UI/organisms/AllTable"
 import Title from "../UI/atoms/Title";
 import Controll from "../UI/molecules/ConPage"
 
