@@ -1,8 +1,8 @@
 import React from "react";
 
-const SimContent = ({content})=>{
+const SimContent = ({content, mainCon})=>{
     return (
-        <p>{content}</p>
+        <p>{content}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{mainCon}</p>
     )
 }
 

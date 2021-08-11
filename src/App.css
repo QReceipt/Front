@@ -252,3 +252,14 @@ th {
 #shortNav{
   display: none;
 }
+
+.sellerBtn{
+  display: block;
+  width:100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size : 20px;
+  background-color: rgb(238, 238, 238);
+  color:black;
+  font-weight: bold;
+}

@@ -1,12 +1,11 @@
 import React from "react";
 
 import Date from "../UI/organisms/Date"
-import Receipt from "../UI/organisms/Receipt"
+import Receipt from "../UI/organisms/SellerReceipt"
 import Nav from "../UI/organisms/Nav"
 import Page from "../UI/atoms/Page"
 import Footer from "../UI/atoms/Footer"
 import Detail from "../UI/organisms/Detail"
-import Table from "../UI/organisms/AllTable"
 import Title from "../UI/atoms/Title";
 import Controll from "../UI/molecules/ConPage"
 
@@ -18,12 +17,9 @@ const SeeAll = () => {
                 <div id="container">
                     <div className="item">
                         <div className="fstCont">
-                            <Title title="영수증 모아보기"/>
+                            <Title title="영수증 모아보기(점주용)"/>
                         </div>
                         <Date/>
-                        <div id="all-table">
-                            <Table/>
-                        </div>
                         <Page num="001"/>
                     </div>
                     <div className="item">

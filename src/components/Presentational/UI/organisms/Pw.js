@@ -3,18 +3,9 @@ import React from "react";
 import Input from "../molecules/LoginInput"
 import Select from "../molecules/TypeInput"
 
+import {type} from "../../../Container/UseApi.js"
+
 const Pw = () => {
-    const type = () => {
-        let tmp = ["손님/배달원", "점주"];
-        let lists = [];
-
-        for (let i = 0; i < 2; i++) {
-            lists.push(<option value={i + 1} key={i+1}>{tmp[i]}</option>);
-        }
-
-        return lists;
-    }
-
     return (
         <div id="RegForm">
             <Input title="이메일" placeHolder="ex)qreceipt@naver.com"/>

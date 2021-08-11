@@ -1,28 +1,22 @@
 import React from "react";
 
-import Title from "../atoms/Title"
 import Info from "../molecules/ReceiptCon"
-import ReceiptTable from "./ReceiptTable";
+import Title from "../atoms/Title"
+import Btn from "../atoms/SellerBtn"
 
 import Map from "../../asset/map.png"
 import {Link} from "react-router-dom";
 
-const Receipt = ({
-    orderdate,
-    ordernum,
+const SellerReceipt = ({
+    posNum,
+    posName,
     order,
     call,
-    paydate,
-    paysuccess,
     map
 }) => {
     return (
         <div id="receiptFrame">
-            <Info
-                MainTitle="주문 일시"
-                SubTitle="주문 번호"
-                MainContent={orderdate}
-                SubContent={ordernum}/>
+            <Info MainTitle="포스 번호" SubTitle="정산원명" MainContent={posNum} SubContent={posName}/>
             <div id="receipttitle">
                 <Title title="가게 이름"/> {
                     (map === "false")
@@ -33,21 +27,23 @@ const Receipt = ({
                 }
 
             </div>
+            
             <Info
                 MainTitle="공급자등록번호"
                 SubTitle="대표 번호"
                 MainContent={order}
                 SubContent={call}/>
-            <ReceiptTable/>
-            
-            <Info
-                MainTitle="결제일"
-                SubTitle="결제유무"
-                MainContent={paydate}
-                SubContent={paysuccess}/>
+
+            <Btn placeholder="매출 합계"/>
+            <Btn placeholder="결제 수단 별 매출내역"/>
+            <Btn placeholder="할인 매출내역"/>
+            <Btn placeholder="현금시재 입력내역"/>
+            <Btn placeholder="현금 정산액"/>
+            <Btn placeholder="신용카드정산 내역"/>
+            <Btn placeholder="카드사별 매출내역"/>
         </div>
 
     )
 }
 
-export default Receipt;
+export default SellerReceipt;
