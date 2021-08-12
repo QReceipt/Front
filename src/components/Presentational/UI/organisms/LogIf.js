@@ -12,8 +12,6 @@ const Login = () => {
                 content="아직 회원이 아니신가요? 비회원의 경우 어플리케이션에서만 영수증 조회가 가능합니다."
                 />
                 <div className="Btn">
-                <Btn placeholder="KAKAO"/>
-                <Btn placeholder="GOOGLE"/>
                 <Link to="/register"><Btn placeholder="회원가입"/></Link>
                 </div>
             </div>

@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useCallback, useState} from "react";
 
 import Date from "../UI/organisms/Date"
-import Receipt from "../UI/organisms/SellerReceipt"
+import SellerReceipt from "../UI/organisms/SellerReceipt"
 import Nav from "../UI/organisms/Nav"
 import Page from "../UI/atoms/Page"
 import Footer from "../UI/atoms/Footer"
@@ -10,6 +10,25 @@ import Title from "../UI/atoms/Title";
 import Controll from "../UI/molecules/ConPage"
 
 const SeeAll = () => {
+    const [on, setOn] = useState({
+        all: false,
+        sum: false,
+        payWith: false,
+        sale: false,
+        cashInput: false,
+        cashSum: false,
+        credit: false,
+        creditCom: false
+    });
+
+    const setDetail = (setX) => {
+        console.log("Seller", setX)
+        console.log(on);
+        let {sum:value} = on;
+
+        setOn({...on, sum:!value})
+    }
+
     return (
         <div className="wrapper">
             <div className="container-fluid">
@@ -23,9 +42,12 @@ const SeeAll = () => {
                         <Page num="001"/>
                     </div>
                     <div className="item">
-                        <Receipt map="false"/>
+                        <SellerReceipt
+                            map="false"
+                            event={setDetail}
+                            on={on}/>
                         <Controll/>
-                        </div>
+                    </div>
                     <div className="item">
                         <Detail/>
                     </div>

@@ -12,7 +12,6 @@ const Nav = () => {
                 <img src={cancel}/>
             </div>
             <div id="liNav">
-                <Li content="QReceipt 가맹점"/>
                 <Link to="/register">
                     <Li content="회원가입"/>
                 </Link>

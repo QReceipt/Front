@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import Info from "../molecules/ReceiptCon"
 import Title from "../atoms/Title"
@@ -7,16 +7,24 @@ import Btn from "../atoms/SellerBtn"
 import Map from "../../asset/map.png"
 import {Link} from "react-router-dom";
 
+import {setSum} from "../../../Container/ReceiptFunc"
+
 const SellerReceipt = ({
     posNum,
     posName,
     order,
     call,
-    map
+    map,
+    event,
+    on
 }) => {
     return (
         <div id="receiptFrame">
-            <Info MainTitle="포스 번호" SubTitle="정산원명" MainContent={posNum} SubContent={posName}/>
+            <Info
+                MainTitle="포스 번호"
+                SubTitle="정산원명"
+                MainContent={posNum}
+                SubContent={posName}/>
             <div id="receipttitle">
                 <Title title="가게 이름"/> {
                     (map === "false")
@@ -25,16 +33,15 @@ const SellerReceipt = ({
                             </Link>
                         : null
                 }
-
             </div>
-            
+
             <Info
                 MainTitle="공급자등록번호"
                 SubTitle="대표 번호"
                 MainContent={order}
                 SubContent={call}/>
 
-            <Btn placeholder="매출 합계"/>
+            <Btn placeholder="매출 합계" event={()=>event('sum')} on={on}/>
             <Btn placeholder="결제 수단 별 매출내역"/>
             <Btn placeholder="할인 매출내역"/>
             <Btn placeholder="현금시재 입력내역"/>
