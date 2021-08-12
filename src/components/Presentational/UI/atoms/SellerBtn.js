@@ -1,7 +1,6 @@
 import React from "react";
 
 const SellerBtn = ({placeholder, event, onKey}) => {
-    console.log(event);
     return (
         <button
             onClick={event}

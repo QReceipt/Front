@@ -20,16 +20,18 @@ const SeeAll = () => {
         credit: false,
         creditCom: false
     });
+
     const setDetail = (key) => {
-        let {key: value} = on;
-        console.log("Seller", value);
+        console.log("key", key);
+        console.log("Seller", on);
+        let value = on[key];
+
         setOn({
             ...on,
-            key: !value
+            [key] : !value
         })
     }
 
-    
     return (
         <div className="wrapper">
             <div className="container-fluid">
