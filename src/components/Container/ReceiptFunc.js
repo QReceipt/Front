@@ -20,19 +20,3 @@ export const date = (type) => {
 
     return lists;
 }
-
-export const SetDetail = ()=>{
-    const [on, setOn] = useState(false);
-
-    const setDetail = ()=>{
-        console.log(on);
-        setOn(on=>!on);
-    }
-
-    return setDetail;
-}
-
-export const setSum=(on)=>{
-    let {sum:value} = on;
-    return {...on, sum:!value}
-}

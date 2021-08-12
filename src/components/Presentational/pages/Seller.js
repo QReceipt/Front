@@ -20,15 +20,16 @@ const SeeAll = () => {
         credit: false,
         creditCom: false
     });
-
-    const setDetail = (setX) => {
-        console.log("Seller", setX)
-        console.log(on);
-        let {sum:value} = on;
-
-        setOn({...on, sum:!value})
+    const setDetail = (key) => {
+        let {key: value} = on;
+        console.log("Seller", value);
+        setOn({
+            ...on,
+            key: !value
+        })
     }
 
+    
     return (
         <div className="wrapper">
             <div className="container-fluid">
@@ -42,10 +43,7 @@ const SeeAll = () => {
                         <Page num="001"/>
                     </div>
                     <div className="item">
-                        <SellerReceipt
-                            map="false"
-                            event={setDetail}
-                            on={on}/>
+                        <SellerReceipt map="false" event={setDetail} on={on}/>
                         <Controll/>
                     </div>
                     <div className="item">

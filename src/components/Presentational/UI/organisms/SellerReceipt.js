@@ -7,8 +7,6 @@ import Btn from "../atoms/SellerBtn"
 import Map from "../../asset/map.png"
 import {Link} from "react-router-dom";
 
-import {setSum} from "../../../Container/ReceiptFunc"
-
 const SellerReceipt = ({
     posNum,
     posName,
@@ -18,6 +16,7 @@ const SellerReceipt = ({
     event,
     on
 }) => {
+    console.log(on["sum"]);
     return (
         <div id="receiptFrame">
             <Info
@@ -41,7 +40,7 @@ const SellerReceipt = ({
                 MainContent={order}
                 SubContent={call}/>
 
-            <Btn placeholder="매출 합계" event={()=>event('sum')} on={on}/>
+            <Btn placeholder="매출 합계" event={() => event('sum')} onKey={on["sum"]} />
             <Btn placeholder="결제 수단 별 매출내역"/>
             <Btn placeholder="할인 매출내역"/>
             <Btn placeholder="현금시재 입력내역"/>
