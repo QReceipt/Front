@@ -10,26 +10,10 @@ import Title from "../UI/atoms/Title";
 import Controll from "../UI/molecules/ConPage"
 
 const SeeAll = () => {
-    const [on, setOn] = useState({
-        all: false,
-        sum: false,
-        payWith: false,
-        sale: false,
-        cashInput: false,
-        cashSum: false,
-        credit: false,
-        creditCom: false
-    });
+    const [on, setOn] = useState(null);
 
     const setDetail = (key) => {
-        console.log("key", key);
-        console.log("Seller", on);
-        let value = on[key];
-
-        setOn({
-            ...on,
-            [key] : !value
-        })
+        setOn(on === key? null : key)
     }
 
     return (
