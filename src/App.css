@@ -90,11 +90,8 @@ select {
 .page {
     width: 150px;
     transform: rotate(-90deg);
-    position: relative;
-    top: 60%;
     font-size: 3rem;
     left: -2rem;
-    margin: -70px 0 0 0;
 }
 
 #footer {
@@ -262,4 +259,8 @@ th {
   background-color: rgb(238, 238, 238);
   color:black;
   font-weight: bold;
+}
+
+#moleFooter>h1{
+  margin: 0 0 5% 0 ;
 }

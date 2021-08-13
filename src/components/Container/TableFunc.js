@@ -27,7 +27,8 @@ export const tableContent = () => {
         for (let i = 0; i < testList.length; i++) {
             list.push(
                 <Item
-                    content={testList[i]}/>
+                    content={testList[i]}
+                    key={i}/>
             )
         }
 
