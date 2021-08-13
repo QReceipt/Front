@@ -54,6 +54,33 @@ let obj2 = {
     "원산지 표시2": "tmp"
 }
 
+let obj3 = {
+    "배달 주소3": "tmp",
+    "연락처3": "tmp",
+    "가게 요청사항3": "tmp",
+    "배달 요청사항3": "tmp",
+    "수저/포크 유무3": "tmp",
+    "원산지 표시3": "tmp"
+}
+
+let obj4 = {
+    "배달 주소4": "tmp",
+    "연락처4": "tmp",
+    "가게 요청사항4": "tmp",
+    "배달 요청사항4": "tmp",
+    "수저/포크 유무4": "tmp",
+    "원산지 표시4": "tmp"
+}
+
+let obj5 = {
+    "배달 주소5": "tmp",
+    "연락처5": "tmp",
+    "가게 요청사항5": "tmp",
+    "배달 요청사항5": "tmp",
+    "수저/포크 유무5": "tmp",
+    "원산지 표시5": "tmp"
+}
+
 export const setMainKey = (mainKey) => {
     switch (mainKey) {
         case 'sum':
@@ -61,11 +88,11 @@ export const setMainKey = (mainKey) => {
         case 'payWith':
             return obj2;
         case 'sale':
-            return obj;
+            return obj3;
         case 'cashInput':
-            return obj;
+            return obj4;
         case 'cashSum':
-            return obj2;
+            return obj5;
         case 'credit':
             return obj;
         case 'creditCom':
