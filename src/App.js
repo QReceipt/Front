@@ -23,7 +23,7 @@ function App() {
         <Route path="/all" component={SeeAll} exact/>
         <Route path="/map" component={Map}/>
         <Route path="/Seller" component={Seller} />
-        <Route pate="/SeeOne" component={SeeId} />
+        <Route path="/SeeOne" component={SeeId} />
     </div>
     );
 }
